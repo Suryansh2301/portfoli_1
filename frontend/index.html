@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suryansh Kumar Pathak — AI/ML Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="logo-group">
+      <img class="nav-avatar" src="assets/profile.jpg" alt="Suryansh Kumar Pathak" onerror="this.style.display='none'">
+      <div class="logo">SURYANSH PATHAK</div>
+    </div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Projects</a>
+      <a href="#timeline">Timeline</a>
+    </div>
+    <a class="nav-cta" href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <p class="eyebrow">AI / ML Engineer</p>
+        <h1>Suryansh Kumar Pathak</h1>
+        <p class="hero-sub">I build retrieval, agentic, and language-model systems — from hybrid RAG pipelines to multi-agent workflows, grounded in open-source models and shipped in containers.</p>
+        <div class="hero-stats">
+          <span class="stat-chip"><b>300+</b> LeetCode solved</span>
+          <span class="stat-chip">Smart India Hackathon — <b>Selected among the top teams in the college-level round</b></span>
+          <span class="stat-chip">L&amp;T Data Science Specialist <b>Certified</b></span>
+          <span class="stat-chip">B.Tech CSE, <b>2027</b></span>
+        </div>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#work">View Projects</a>
+          <a class="btn btn-teal" href="/api/resume/pdf" download="Suryansh_Kumar_Pathak_Resume.pdf">Download Resume ↓</a>
+          <a class="btn btn-ghost" href="https://github.com/Suryansh2301" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/suryansh-kumar-pathak-ba2177325/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="assets/profile.jpg" alt="Suryansh Kumar Pathak" onerror="this.parentElement.classList.add('photo-missing')">
+        <div class="photo-placeholder">Add<br>assets/profile.jpg</div>
+      </div>
+    </div>
+
+    <div class="pipeline-visual" role="img" aria-label="Diagram of a retrieval-augmented generation pipeline: query, retrieve, rerank, generate, answer">
+      <div class="node" tabindex="0">
+        <span class="node-dot"></span>
+        <span class="node-label">Query</span>
+        <div class="node-tip">A user question enters the system.</div>
+      </div>
+      <div class="edge"></div>
+      <div class="node" tabindex="0">
+        <span class="node-dot"></span>
+        <span class="node-label">Retrieve</span>
+        <div class="node-tip">Hybrid search — BM25 keyword + ChromaDB dense retrieval on bge-m3 embeddings.</div>
+      </div>
+      <div class="edge"></div>
+      <div class="node" tabindex="0">
+        <span class="node-dot"></span>
+        <span class="node-label">Rerank</span>
+        <div class="node-tip">A cross-encoder reranks candidates; the top 2 are kept.</div>
+      </div>
+      <div class="edge"></div>
+      <div class="node" tabindex="0">
+        <span class="node-dot"></span>
+        <span class="node-label">Generate</span>
+        <div class="node-tip">Qwen3-8B drafts a grounded answer via LangChain LCEL.</div>
+      </div>
+      <div class="edge"></div>
+      <div class="node" tabindex="0">
+        <span class="node-dot"></span>
+        <span class="node-label">Answer</span>
+        <div class="node-tip">Quality is tracked continuously with Ragas.</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section id="about" class="section">
+  <div class="section-inner">
+    <span class="section-label">About</span>
+
+    <h2>Final-year CS student building practical AI systems.</h2>
+
+    <p class="about-text">
+      I'm a final-year <b>B.Tech Computer Science</b> student at Shri Ramswaroop
+      Memorial University, focused on <b>Machine Learning, Generative AI, and
+      Large Language Models</b>. I enjoy building practical AI applications
+      using technologies like <b>Python, LangChain, Hugging Face, RAG,
+      vector databases, FastAPI, and Docker</b>.
+      
+      <br><br>
+
+      I've worked on projects such as <b>RAG-based document assistants,
+      customer support systems, and AI applications</b>. I'm currently
+      exploring <b>LLM applications and agentic AI</b> and learning how to
+      build reliable AI systems that can be used in real-world scenarios.
+
+      <br><br>
+
+      Outside of projects, I practice <b>DSA on LeetCode</b>, was selected for
+      the <b>Smart India Hackathon</b> college-level round, and hold an
+      <b>L&amp;T Data Science Specialist</b> certification.
+
+      <br><br>
+
+      My goal is to keep learning, build useful AI systems, and grow into a
+      strong <b>AI/ML Engineer</b>.
+    </p>
+  </div>
+</section>
+
+<section id="skills" class="section">
+  <div class="section-inner">
+    <span class="section-label">Skills</span>
+    <h2>What I work with</h2>
+
+    <div class="skill-groups">
+
+      <div class="skill-group" data-accent="amber">
+        <h3>Languages &amp; Data</h3>
+        <div class="tag-row">
+          <span class="tag">Python</span>
+          <span class="tag">C++</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">NumPy</span>
+        </div>
+      </div>
+
+      <div class="skill-group" data-accent="rose">
+        <h3>Machine Learning &amp; Deep Learning</h3>
+        <div class="tag-row">
+          <span class="tag">Scikit-learn</span>
+          <span class="tag">TensorFlow</span>
+          <span class="tag">Keras</span>
+          <span class="tag">LSTM</span>
+          <span class="tag">NLP</span>
+          <span class="tag">Transformers</span>
+        </div>
+      </div>
+
+      <div class="skill-group" data-accent="teal">
+        <h3>Generative AI &amp; LLM</h3>
+        <div class="tag-row">
+          <span class="tag">LangChain</span>
+          <span class="tag">RAG</span>
+          <span class="tag">LLMs</span>
+          <span class="tag">Hugging Face</span>
+          <span class="tag">LoRA / QLoRA</span>
+          <span class="tag">RAGAS</span>
+        </div>
+      </div>
+
+      <div class="skill-group" data-accent="blue">
+        <h3>Retrieval &amp; Vector Search</h3>
+        <div class="tag-row">
+          <span class="tag">ChromaDB</span>
+          <span class="tag">FAISS</span>
+          <span class="tag">BM25</span>
+          <span class="tag">Cross-Encoder</span>
+          <span class="tag">Embeddings</span>
+        </div>
+      </div>
+
+      <div class="skill-group" data-accent="green">
+        <h3>Backend &amp; Deployment</h3>
+        <div class="tag-row">
+          <span class="tag">FastAPI</span>
+          <span class="tag">Streamlit</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Git</span>
+          <span class="tag">GitHub</span>
+        </div>
+      </div>
+
+      <div class="skill-group" data-accent="violet">
+        <h3>Development Tools</h3>
+        <div class="tag-row">
+          <span class="tag">VS Code</span>
+          <span class="tag">Jupyter</span>
+          <span class="tag">Google Colab</span>
+          <span class="tag">Ollama</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="work" class="section">
+  <div class="section-inner">
+    <span class="section-label">Projects</span>
+    <h2>Selected work</h2>
+    <div class="projects">
+
+      <div class="project-card">
+        <div class="project-head"><span class="project-title">RAG Copilot</span></div>
+        <p class="project-desc">A hybrid-retrieval assistant combining BM25 keyword search with ChromaDB dense retrieval (BAAI/bge-m3 embeddings) and cross-encoder reranking, orchestrated with LangChain LCEL. Migrated generation from Gemini to a self-hosted Qwen3-8B on Hugging Face, with retrieval and hallucination quality tracked through Ragas. Deployed on Render.</p>
+        <span class="project-config">CHUNK_SIZE=500 · CHUNK_OVERLAP=75 · TOP_K=4 · TOP_N_RERANKED=2</span>
+        <div class="project-tags">
+          <span>LangChain</span><span>ChromaDB</span><span>BM25</span><span>Hugging Face</span><span>Ragas</span>
+        </div>
+        <!-- TODO: replace with this project's actual repo URL -->
+        <a class="btn-code" href="https://github.com/Suryansh2301/RAG_Projects" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+          View Code ↗
+        </a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-head"><span class="project-title">Customer Support RAG Assistant</span></div>
+        <p class="project-desc">Built a customer-support question-answering assistant using a hybrid retrieval pipeline that combines BM25 sparse retrieval with
+ChromaDB vector search, followed by Cross-Encoder re-ranking for improved context selection.
+· Implemented the application with LangChain LCEL and Hugging Face BAAI/bge-m3 embeddings, with Groq openai/gpt-oss-20b used
+for response generation Evaluated the Customer Support RAG pipeline using Ragas across 4 metrics: Faithfulness (0.798), Answer Relevancy (0.632), Context Precision (0.783), and Context Recall (1.000). The evaluation showed strong retrieval coverage while identifying answer relevance and retrieval precision as key areas for further optimization.</p>
+        <span class="project-config"> TOP_K_DENSE = 4 · TOP_K_SPARSE = 4 · TOP_N_RERANKED = 3</span>
+        <div class="project-tags">
+          <span>LangChain</span><span>ChromaDB</span><span>BM25</span><span>Hugging Face</span><span>Ragas</span><span>Streamlit</span>
+        </div>
+        <!-- TODO: replace with this project's actual repo URL -->
+        <a class="btn-code" href="https://github.com/Suryansh2301/customer_support_rag_" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+          View Code ↗
+        </a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-head"><span class="project-title">AI Medical Assistant</span></div>
+        <p class="project-desc">A symptom-analysis assistant that retrieves relevant medical context through a vector database and RAG, served through a FastAPI backend and containerized with Docker.</p>
+        <div class="project-tags">
+          <span>LangChain</span><span>Ollama</span><span>FastAPI</span><span>RAG</span><span>Vector DB</span><span>Hugging Face</span><span>Docker</span>
+        </div>
+        <!-- TODO: replace with this project's actual repo URL -->
+        <a class="btn-code" href="https://github.com/Suryansh2301/Medical-Ai-Assistant" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+          View Code ↗
+        </a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-head"><span class="project-title">IMDB Sentiment Analysis</span></div>
+        <p class="project-desc">A sentiment classifier trained on IMDB reviews using an LSTM network with GloVe embeddings, reaching roughly 88% accuracy, served through a Streamlit app and containerized with Docker.</p>
+        <div class="project-tags">
+          <span>TensorFlow</span><span>LSTM</span><span>GloVe</span><span>NLP</span><span>Streamlit</span><span>Docker</span>
+        </div>
+        <!-- TODO: replace with this project's actual repo URL -->
+        <a class="btn-code" href="https://github.com/Suryansh2301" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+          View Code ↗
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="timeline" class="section">
+  <div class="section-inner">
+    <span class="section-label">Timeline</span>
+    <h2>Path so far</h2>
+    <div class="timeline">
+      <div class="tl-item">
+        <span class="tl-marker"></span>
+        <span class="tl-num">2023</span>
+        <h3>Started B.Tech, Computer Science & Engineering</h3>
+        <p>Shri Ramswaroop Memorial University, Lucknow</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-marker"></span>
+        <span class="tl-num">Along the way</span>
+        <h3>Selected — Smart India Hackathon in the college-level round</h3>
+        <p>National-level hackathon selection</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-marker"></span>
+        <span class="tl-num">Along the way</span>
+        <h3>L&amp;T Data Science Specialist</h3>
+        <p>Certification in applied data science</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-marker"></span>
+        <span class="tl-num">2027</span>
+        <h3>Expected graduation</h3>
+        <p>B.Tech CSE, CGPA 7.00</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section contact">
+  <div class="section-inner">
+    <span class="section-label">Contact</span>
+    <h2>Open to AI/ML, MLOps &amp; applied ML roles.</h2>
+    <p class="contact-sub">I'm actively interviewing and happy to talk about roles, projects, or collaboration. The fastest way to reach me is email.</p>
+    <div class="contact-links">
+      <a class="contact-link" href="mailto:suryanshkrpathak@gmail.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M4 4l8 8 8-8"/></svg>
+        suryanshkrpathak@gmail.com
+      </a>
+      <a class="contact-link" href="tel:+919451345547">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        +91 94513 45547
+      </a>
+      <a class="contact-link" href="https://www.linkedin.com/in/suryansh-kumar-pathak-ba2177325/" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        LinkedIn
+      </a>
+      <a class="contact-link" href="https://github.com/Suryansh2301" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+        GitHub
+      </a>
+      <a class="contact-link" href="https://leetcode.com/u/Suryansh_005/" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17l6 6 10-10-6-6z"/><path d="M4 17l6-6"/></svg>
+        LeetCode
+      </a>
+      <a class="contact-link" href="/api/resume/pdf" download="Suryansh_Kumar_Pathak_Resume.pdf">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg>
+        Resume (PDF)
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>Built by Suryansh Kumar Pathak · Updated <span id="year">2026</span></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
