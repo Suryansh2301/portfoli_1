@@ -42,7 +42,7 @@
         </div>
         <div class="hero-cta">
           <a class="btn btn-primary" href="#work">View Projects</a>
-          <a class="btn btn-teal" href="/api/resume/pdf" download="Suryansh_Kumar_Pathak_Resume.pdf">Download Resume ↓</a>
+          <a class="btn btn-teal" href="/api/resume/pdf" download="Suryansh_Kumar_Pathak.pdf">Download Resume ↓</a>
           <a class="btn btn-ghost" href="https://github.com/Suryansh2301" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
           <a class="btn btn-ghost" href="https://www.linkedin.com/in/suryansh-kumar-pathak-ba2177325/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
         </div>
@@ -222,6 +222,19 @@
         </div>
         <!-- TODO: replace with this project's actual repo URL -->
         <a class="btn-code" href="https://github.com/Suryansh2301/RAG_Projects" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+          View Code ↗
+        </a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-head"><span class="project-title">Multimodal RAG Application</span></div>
+        <p class="project-desc">A multimodal question-answering app on Groq models that answers questions over images, documents and tables, with a Claude-style chat interface and an attach control for uploading files. A FastAPI backend serves the RAG pipeline to a decoupled Streamlit frontend. The pipeline is built with LangChain LCEL, RecursiveCharacterTextSplitter chunking and Gemini embeddings (gemini-embedding-2). An automated harness of 19 test cases covering tool use, safety, memory, failure handling and file retrieval reached a 100% pass rate and 100% tool-selection F1, with 12.9 s median (36.0 s p95) answer latency. Deployed on Render.</p>
+        <span class="project-config">EVAL_CASES=19 · PASS_RATE=100% · TOOL_F1=100% · P50=12.9s · P95=36.0s</span>
+        <div class="project-tags">
+          <span>FastAPI</span><span>Streamlit</span><span>LangChain</span><span>Groq</span><span>Gemini Embeddings</span>
+        </div>
+        <a class="btn-code" href="https://github.com/Suryansh2301/Multimodal-RAG-Chat" target="_blank" rel="noopener noreferrer">
           <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
           View Code ↗
         </a>

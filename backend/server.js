@@ -1,39 +1,82 @@
+
 const express = require('express');
 const path = require('path');
+const fs = require('fs');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// Project directories
 const FRONTEND_DIR = path.join(__dirname, '..', 'frontend');
 const FILES_DIR = path.join(__dirname, 'files');
 
-// Serve the static frontend (index.html, style.css, script.js)
+// Resume PDF path
+const resumePath = path.join(
+    FILES_DIR,
+    'Suryansh_Kumar_Pathak.pdf'
+);
+
+// Debug information
+console.log('Looking for resume:', resumePath);
+console.log('Resume exists:', fs.existsSync(resumePath));
+
+if (fs.existsSync(FILES_DIR)) {
+    console.log('Files folder:', fs.readdirSync(FILES_DIR));
+} else {
+    console.log('Files folder does not exist!');
+}
+
+// Serve frontend static files
 app.use(express.static(FRONTEND_DIR));
 
-// Resume download — the real file on disk, served through the API
+// Resume download API
 app.get('/api/resume/pdf', (req, res) => {
-  res.download(
-    path.join(FILES_DIR, 'Suryansh_Kumar_Pathak_Resume.pdf'),
-    'Suryansh_Kumar_Pathak_Resume.pdf',
-    (err) => {
-      if (err && !res.headersSent) {
-        res.status(404).json({ error: 'Resume PDF not found on server.' });
-      }
+
+    if (!fs.existsSync(resumePath)) {
+        console.error('Resume PDF not found:', resumePath);
+
+        return res.status(404).json({
+            success: false,
+            error: 'Resume PDF not found on server.'
+        });
     }
-  );
+
+    res.download(
+        resumePath,
+        'Suryansh_Kumar_Pathak.pdf',
+        (err) => {
+            if (err) {
+                console.error('Download error:', err);
+            } else {
+                console.log('Resume downloaded successfully.');
+            }
+        }
+    );
 });
 
-// Simple health check, useful once this is deployed
+// Health check API
 app.get('/api/health', (req, res) => {
-  res.json({ status: 'ok' });
+    res.json({
+        status: 'ok',
+        message: 'Portfolio backend is running'
+    });
 });
 
-// Any unknown route falls back to the SPA's index page
-app.get('*', (req, res) => {
-  res.sendFile(path.join(FRONTEND_DIR, 'index.html'));
+// Handle unknown API routes
+app.use('/api', (req, res) => {
+    res.status(404).json({
+        error: 'API route not found'
+    });
 });
 
+// Frontend fallback
+app.use((req, res) => {
+    res.sendFile(path.join(FRONTEND_DIR, 'index.html'));
+});
+
+// Start server
 app.listen(PORT, () => {
-  console.log(`Portfolio server running at http://localhost:${PORT}`);
+    console.log(`Portfolio server running at http://localhost:${PORT}`);
 });
 
+module.exports = app;

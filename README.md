@@ -38,7 +38,7 @@ portfolio/
 │   ├── server.js
 │   ├── package.json
 │   └── files/
-│       └── Suryansh_Kumar_Pathak_Resume.pdf
+│       └── Suryansh_Kumar_Pathak.pdf
 ├── .gitignore
 └── README.md
 ```
@@ -60,6 +60,7 @@ Then open **http://localhost:3000**.
 Replace the 4 placeholder `View Code` links in `frontend/index.html`
 with each project's actual GitHub repo URL:
 - RAG Copilot
+- Multimodal RAG Application
 - Customer Support RAG Assistant
 - AI Medical Assistant
 - IMDB Sentiment Analysis
